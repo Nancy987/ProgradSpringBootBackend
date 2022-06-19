@@ -2,6 +2,7 @@ package com.Prograd.Springboot.Backend.Service;
 
 import com.Prograd.Springboot.Backend.Modals.Student;
 import com.Prograd.Springboot.Backend.Repository.StudentRepository;
+import com.Prograd.Springboot.Backend.exceptions.StudentNotFound;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

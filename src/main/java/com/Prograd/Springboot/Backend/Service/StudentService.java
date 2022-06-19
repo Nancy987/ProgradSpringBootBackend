@@ -1,6 +1,7 @@
 package com.Prograd.Springboot.Backend.Service;
 
 import com.Prograd.Springboot.Backend.Modals.Student;
+import com.Prograd.Springboot.Backend.exceptions.StudentNotFound;
 
 import java.util.List;
 

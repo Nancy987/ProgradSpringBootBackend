@@ -1,13 +1,10 @@
 package com.Prograd.Springboot.Backend.exceptions;
 
 import com.Prograd.Springboot.Backend.Modals.ApiResponse;
-import com.Prograd.Springboot.Backend.Service.StudentNotFound;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-
-import java.util.Map;
 
 @RestControllerAdvice              // make exception handler of controller
 public class GlobalExceptionHandler {

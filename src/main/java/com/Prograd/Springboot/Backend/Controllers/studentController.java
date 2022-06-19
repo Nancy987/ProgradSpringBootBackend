@@ -1,7 +1,7 @@
 package com.Prograd.Springboot.Backend.Controllers;
 
 import com.Prograd.Springboot.Backend.Modals.Student;
-import com.Prograd.Springboot.Backend.Service.StudentNotFound;
+import com.Prograd.Springboot.Backend.exceptions.StudentNotFound;
 import com.Prograd.Springboot.Backend.Service.StudentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
