@@ -18,9 +18,6 @@ public class StudentDetailService implements UserDetailsService {            // 
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         //loads user from database by username
         Student student = this.studentRepository.findByEmail(username).orElseThrow(() -> new UsernameNotFoundException("User not present"));
-
         return student;
     }
 }
-// authenticator manager
-// authenticator provider
