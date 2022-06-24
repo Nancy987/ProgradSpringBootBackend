@@ -3,7 +3,6 @@ package com.Prograd.Springboot.Backend.Security;
 import com.Prograd.Springboot.Backend.Modals.Student;
 import com.Prograd.Springboot.Backend.Repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
