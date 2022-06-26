@@ -8,6 +8,7 @@ import com.Prograd.Springboot.Backend.Service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -18,6 +19,7 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("api/students")
 public class studentController {
@@ -37,6 +39,7 @@ public class studentController {
         return new ResponseEntity<Student>(studentService.saveStudent(student), HttpStatus.CREATED);
     }
     @GetMapping
+    @PreAuthorize("hasRole('ADMIN')")
     public List<Student> getAllStudents(){
         return studentService.getAllStudents();
     }

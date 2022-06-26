@@ -19,7 +19,7 @@
 //import org.springframework.web.bind.annotation.RestController;
 //
 //@RestController
-//@RequestMapping("api/auth/")
+//@RequestMapping("api/students/")
 //public class AuthController {
 //
 //    @Autowired
